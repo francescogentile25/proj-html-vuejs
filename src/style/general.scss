@@ -1,3 +1,6 @@
 @use 'bootstrap' as*;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
-$primary: #1f1f54;
+#app {
+    font-family: 'Roboto', sans-serif;
+}

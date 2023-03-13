@@ -1,5 +1,8 @@
 :root {
-    --primary: #1f1f54
+    --primary: #1f1f54;
+    --black: #333333;
+    --silver: #bcbcbc;
+    --green: #27ab94;
 }
 
 ul,
