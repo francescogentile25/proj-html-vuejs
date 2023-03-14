@@ -10,7 +10,7 @@
             <div class="col">
                 <ul class="card-container">
                     <li v-for="(card, i) in cards" :key="i" class="my-card">
-                        <img v-bind:src="card.img" alt="" class="rounded-circle card-img">
+                        <img :src="card.img" alt="" class="rounded-circle card-img">
                         <div class="info">
                             <p class="price">{{ card.price }}</p>
                             <p class="text"> {{ card.text }}</p>
