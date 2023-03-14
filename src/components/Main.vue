@@ -7,6 +7,8 @@
         <Partner></Partner>
         <Blog></Blog>
         <Learn></Learn>
+        <GetStarted></GetStarted>
+
     </div>
 </template>
 
@@ -18,6 +20,7 @@ import LatestCourses from './LatestCourses.vue';
 import Partner from './Partner.vue';
 import Blog from './Blog.vue';
 import Learn from './Learn.vue';
+import GetStarted from './GetStarted.vue';
 export default {
     components: {
         Jumbo,
@@ -27,6 +30,7 @@ export default {
         Partner,
         Blog,
         Learn,
+        GetStarted
     },
     data() {
         return {
