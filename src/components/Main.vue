@@ -2,16 +2,19 @@
     <div>
         <Jumbo></Jumbo>
         <Counter></Counter>
+        <CardService></CardService>
     </div>
 </template>
 
 <script>
 import Jumbo from './Jumbo.vue';
-import Counter from './Counter.vue'
+import Counter from './Counter.vue';
+import CardService from './CardService.vue';
 export default {
     components: {
         Jumbo,
-        Counter
+        Counter,
+        CardService,
 
     },
     data() {
