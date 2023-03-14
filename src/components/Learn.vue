@@ -1,21 +1,23 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="text text-center">
-                    <h3 class="title">Wanna transform your life?</h3>
-                    <h2>Glad to <span style="color: var(--green);">Help You</span></h2>
-                </div>
-                <div class="card-container justify-content-between">
-                    <div v-for="(card, i) in cards" :key="i" class="my-card">
-                        <img :src="card.img" alt="">
-                        <p class="card-title">{{ card.title }}</p>
-                        <p class="card-text">{{ card.text }}</p>
+    <div class="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text text-center">
+                        <h3 class="title">Wanna transform your life?</h3>
+                        <h2>Glad to <span style="color: var(--green);">Help You</span></h2>
+                    </div>
+                    <div class="card-container justify-content-between">
+                        <div v-for="(card, i) in cards" :key="i" class="my-card">
+                            <img :src="card.img" alt="">
+                            <p class="card-title">{{ card.title }}</p>
+                            <p class="card-text">{{ card.text }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <img src="../assets/img/home-6-services-image-1024x411.png" alt="" class="w-100 img">
+                <div class="col">
+                    <img src="../assets/img/home-6-services-image-1024x411.png" alt="" class="w-100 img">
+                </div>
             </div>
         </div>
     </div>
@@ -79,5 +81,9 @@ export default {
 .img {
     position: relative;
     top: 36px;
+}
+
+.background {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(234, 237, 241, 0.8) 100%);
 }
 </style>

@@ -1,16 +1,18 @@
 <template>
-    <div class="container">
-        <div class="text text-center">
-            <p class="text-uppercase sub-title">Enjoy reading on maxcoach</p>
-            <h1 class="title">Lastest on <span style="color:var(--green)">Our Blogs</span></h1>
-        </div>
-        <div class="blog-post d-flex gap-4">
-            <div v-for="(card, i) in cards" :key="(i)" class="my-card">
-                <img :src="card.img" alt="" class="rounded-1">
-                <p class="job">{{ card.job }}</p>
-                <p class="text">{{ card.text }}</p>
-                <font-awesome-icon icon="fa-regular fa-calendar icon" /><span class="date">{{ card.date }}</span>
-                <font-awesome-icon icon="fa-regular fa-eye icon" /><span>{{ card.views }} views</span>
+    <div class="background" style="background-color: #F4F7FA;">
+        <div class="container">
+            <div class="text text-center">
+                <p class="text-uppercase sub-title">Enjoy reading on maxcoach</p>
+                <h1 class="title">Lastest on <span style="color:var(--green)">Our Blogs</span></h1>
+            </div>
+            <div class="blog-post d-flex gap-4">
+                <div v-for="(card, i) in cards" :key="(i)" class="my-card">
+                    <img :src="card.img" alt="" class="rounded-1">
+                    <p class="job">{{ card.job }}</p>
+                    <p class="text">{{ card.text }}</p>
+                    <font-awesome-icon icon="fa-regular fa-calendar icon" /><span class="date">{{ card.date }}</span>
+                    <font-awesome-icon icon="fa-regular fa-eye icon" /><span>{{ card.views }} views</span>
+                </div>
             </div>
         </div>
     </div>
@@ -65,3 +67,4 @@ export default {
     margin-right: 36px;
 }
 </style>
+
