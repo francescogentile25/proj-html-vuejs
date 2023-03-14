@@ -40,42 +40,42 @@ export default {
         return {
             cards: [
                 {
-                    img: '../assets/img/course-02-480x298.jpg',
+                    img: '/src/assets/img/course-02-480x298.jpg',
                     price: '$40.00',
                     text: 'Learning to Write as a Professional Author',
                     lessons: '20',
                     student: '50'
                 },
                 {
-                    img: '../assets/img/stock-full-hd-04-480x298.jpg',
+                    img: '/src/assets/img/stock-full-hd-04-480x298.jpg',
                     price: '$19.00',
                     text: 'Open Origramming Courses for Everyone:Pyton',
                     lessons: '17',
                     student: '62'
                 },
                 {
-                    img: '../assets/img/course-featured-image-01-480x298.jpg',
+                    img: '/src/assets/img/course-featured-image-01-480x298.jpg',
                     price: '$39.00',
                     text: 'Master jQuery in a Short Period of Time',
                     lessons: '61',
                     student: '51'
                 },
                 {
-                    img: '../assets/img/stock-full-hd-03-480x298.jpg',
+                    img: '/src/assets/img/stock-full-hd-03-480x298.jpg',
                     price: 'Free',
                     text: 'Customer-centric Info-Tech Strategies',
                     lessons: '24',
                     student: '769'
                 },
                 {
-                    img: '../assets/img/stock-full-hd-06-480x298.jpg',
+                    img: '/src/assets/img/stock-full-hd-06-480x298.jpg',
                     price: '$26.00',
                     text: 'Academic Listening taking',
                     lessons: '14',
                     student: '67'
                 },
                 {
-                    img: '../assets/img/stock-full-hd-05-480x298.jpg',
+                    img: '/src/assets/img/stock-full-hd-05-480x298.jpg',
                     price: '$59.00',
                     text: 'Introduction to Java Beginners',
                     lessons: '14',

@@ -6,7 +6,7 @@
         </div>
         <div class="blog-post d-flex gap-4">
             <div v-for="(card, i) in cards" :key="(i)" class="my-card">
-                <img src="../assets/img/artist-blog-03-480x325.jpeg" alt="" class="rounded-1">
+                <img :src="card.img" alt="" class="rounded-1">
                 <p class="job">{{ card.job }}</p>
                 <p class="text">{{ card.text }}</p>
                 <font-awesome-icon icon="fa-regular fa-calendar icon" /><span class="date">{{ card.date }}</span>
@@ -22,21 +22,21 @@ export default {
         return {
             cards: [
                 {
-                    img: '/artist-blog-01-480x325.jpg',
+                    img: '/src/assets/img/artist-blog-01-480x325.jpg',
                     job: 'Artist',
                     text: 'Brush Srokes Energize Trees in Paintings',
                     date: 'May 15,2020',
                     views: '688',
                 },
                 {
-                    img: '../assets/img/artist-blog-01-480x325.jpeg',
+                    img: '/src/assets/img/artist-blog-03-480x325.jpeg',
                     job: 'Artist',
                     text: 'Pocket-Sized Notebooks Hold Miniature Paintings',
                     date: 'May 15,2020',
                     views: '603',
                 },
                 {
-                    img: '../assets/img/artist-blog-02-480x325.jpeg',
+                    img: '/src/assets/img/artist-blog-02-480x325.jpg',
                     job: 'Artist',
                     text: 'Connection Between Self-Portraits and Identify',
                     date: 'May 15,2020',
