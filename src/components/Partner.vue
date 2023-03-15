@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <h2 class="title text-center">Why Pople Talk About <span style="color: var(--green);">MaxCoach</span></h2>
-                <div class="testimonial d-flex">
+                <div class="testimonial d-flex align-items-center">
                     <img class="rounded-circle card-img" src="../assets/img/testimonial-avata-02.jpg" alt="">
                     <div class="text">
                         <p class="main-text">

@@ -1,8 +1,10 @@
 <template>
     <div>
         <Jumbo></Jumbo>
-        <Counter></Counter>
-        <CardService></CardService>
+        <div class="pattern container">
+            <Counter></Counter>
+            <CardService></CardService>
+        </div>
         <LatestCourses></LatestCourses>
         <Partner></Partner>
         <Blog></Blog>
@@ -40,4 +42,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.pattern {
+    background-image: url(../assets/img/background-pattern-grid-line.png);
+}
+</style>
