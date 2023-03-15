@@ -56,25 +56,27 @@ export default {
     max-width: 723px;
     text-align: center;
     margin: 0 auto;
+
+    .title {
+        margin-top: 329px;
+        font-size: 34px;
+        color: var(--black);
+        font-weight: 700;
+    }
+
+    .position {
+        color: var(--silver);
+    }
 }
 
-.title {
-    margin-top: 329px;
-    font-size: 34px;
-    color: var(--black);
-    font-weight: 700;
-}
 
-.position {
-    color: var(--silver);
-}
 
 .counter-container {
     margin: 154px 0;
-}
 
-.counter {
-    margin: 0 52px
+    .counter {
+        margin: 0 52px
+    }
 }
 
 .number {
@@ -83,8 +85,11 @@ export default {
     font-size: 48px;
 }
 
+
 .counter-description {
+    color: var(--black);
     font-size: 15px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 </style>

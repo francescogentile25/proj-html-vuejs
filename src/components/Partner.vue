@@ -19,9 +19,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div v-for="(image, i) in images" :key="i" class="logo">
-                    <img :src="image" alt="">
+            <div class="col d-flex justify-content-around align-itemsn-center">
+                <div v-for="(partner, i) in partners" :key="i" class="logo">
+                    <img :src="partner" alt="">
                 </div>
             </div>
         </div>
@@ -32,23 +32,36 @@
 export default {
     data() {
         return {
-            data() {
-                return {
-                    images: ['../assets/img/client-logo-colored-01.png', '../assets/img/client-logo-colored-02.png', '../assets/img/client-logo-colored-03.png', '../assets/img/client-logo-colored-04.png', '../assets/img/client-logo-colored-05.png', '../assets/img/client-logo-colored-06.png']
-                }
-            },
+            partners: [
+                '/src/assets/img/client-logo-colored-01.png',
+                '/src/assets/img/client-logo-colored-02.png',
+                '/src/assets/img/client-logo-colored-03.png',
+                '/src/assets/img/client-logo-colored-04.png',
+                '/src/assets/img/client-logo-colored-05.png',
+                '/src/assets/img/client-logo-colored-06.png'
+            ],
         }
     },
 }
 </script>
 
 <style lang="scss" scoped>
+.title {
+    margin-top: 90px;
+    font-size: 48px;
+    font-family: 700;
+    color: var(--black);
+
+}
+
 .text {
     max-width: 662px;
+    margin-top: 125px;
 }
 
 .main-text {
     font-size: 34px;
+    font-weight: 500;
     color: var(--black);
 
 }
@@ -60,5 +73,14 @@ export default {
 
 .position {
     color: var(--silver);
+}
+
+.logo {
+    margin: 100px 0
+}
+
+.logo:hover {
+    filter: grayscale(100%);
+
 }
 </style>

@@ -6,12 +6,14 @@
                 <h1 class="title">Lastest on <span style="color:var(--green)">Our Blogs</span></h1>
             </div>
             <div class="blog-post d-flex gap-4">
-                <div v-for="(card, i) in cards" :key="(i)" class="my-card">
+                <div v-for="(card, i) in cards" :key="(i)" class="my-card col-4">
                     <img :src="card.img" alt="" class="rounded-1">
                     <p class="job">{{ card.job }}</p>
                     <p class="text">{{ card.text }}</p>
-                    <font-awesome-icon icon="fa-regular fa-calendar icon" /><span class="date">{{ card.date }}</span>
-                    <font-awesome-icon icon="fa-regular fa-eye icon" /><span>{{ card.views }} views</span>
+                    <div class="icon">
+                        <font-awesome-icon icon="fa-regular fa-calendar icon" /><span class="date">{{ card.date }}</span>
+                        <font-awesome-icon icon="fa-regular fa-eye icon" /><span>{{ card.views }} views</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,19 +54,45 @@ export default {
 
 <style lang="scss" scoped>
 .title {
+    margin-bottom: 70px;
     font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+
 }
 
 .sub-title {
+    padding-top: 100px;
     font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #696969;
 }
 
-.icon {
-    margin-right: 9px;
-}
 
 .date {
     margin-right: 36px;
+}
+
+.job {
+    text-transform: uppercase;
+    color: #696969;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    color: #8C89A2;
+    font-size: 14px;
+    margin-bottom: 100px;
+
 }
 </style>
 

@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text text-center">
-                        <h3 class="title">Wanna transform your life?</h3>
-                        <h2>Glad to <span style="color: var(--green);">Help You</span></h2>
+                        <p class="subtitle">Wanna transform your life?</p>
+                        <h2 class="title">Glad to <span style="color: var(--green);">Help You </span>Learn</h2>
                     </div>
                     <div class="card-container justify-content-between">
                         <div v-for="(card, i) in cards" :key="i" class="my-card">
@@ -65,17 +65,30 @@ export default {
 }
 
 .title {
+    margin-bottom: 96px;
+    font-weight: 700;
     font-size: 43px;
     color: var(--black);
 }
 
+.subtitle {
+    margin-top: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #696969;
+}
+
 .card-title {
+    margin: 22px 0;
     font-size: 20px;
+    font-weight: 700;
 
 }
 
 .card-text {
     font-size: 15px;
+    color: #696969;
 }
 
 .img {

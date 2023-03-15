@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <p>Choose a course to get started</p>
-                    <h2>Latest Featured <span style="color:var(--green)">Courses</span></h2>
+                    <p class="subtitle">Choose a course to get started</p>
+                    <h2 class="title">Latest Featured <span style="color:var(--green)">Courses</span></h2>
                 </div>
             </div>
             <div class="row">
@@ -19,14 +19,14 @@
                                     <font-awesome-icon icon="fa-regular fa-file" />
                                     <span>{{ card.lessons }} Lessons</span>
                                     <font-awesome-icon icon="fa-regular fa-user" />
-                                    <span>{{ card.student }}Student</span>
+                                    <span>{{ card.student }} Student</span>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="btn btn-success" style="max-width: 200px;">
+                    <div class="btn btn-success button">
                         View all courses
                         <font-awesome-icon icon="fa-solid fa-arrow-right" />
                     </div>
@@ -91,21 +91,64 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title {
+    font-size: 48px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 50px;
+    font-size: 15px;
+    color: #696969;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+
+    .my-card {
+        display: flex;
+        max-width: 523px;
+        align-items: center;
+        gap: 26px;
+
+        .card-img {
+            max-width: 170px;
+            aspect-ratio: 1;
+        }
+    }
+
 }
 
-.my-card {
+.price {
+    color: var(--green);
+    font-size: 24px;
+    font-weight: bold
+}
+
+.text {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #696969;
+}
+
+.icon {
     display: flex;
-    max-width: 523px;
-    align-items: center;
-    gap: 26px;
+    gap: 10px;
+    color: #8C89A2;
+    font-size: 14px;
+
 }
 
-.card-img {
-    max-width: 170px;
-    aspect-ratio: 1;
+.button {
+    max-width: 260px;
+    padding: 14px 40px;
+    margin-bottom: 100px;
+    margin-top: 60px
 }
 </style>

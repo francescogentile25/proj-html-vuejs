@@ -10,9 +10,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faUserSecret, faCartShopping, faUserCircle, faMagnifyingGlass, faChevronDown, faCheck, faArrowRight, } from '@fortawesome/free-solid-svg-icons'
 import { faCalendar, faEye, faFile, faUser } from '@fortawesome/free-regular-svg-icons'
+import { faLinkedin, faSquareFacebook, faSquareInstagram, faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faCartShopping, faUserCircle, faMagnifyingGlass, faChevronDown, faCheck, faFile, faUser, faArrowRight, faCalendar, faEye,)
+library.add(faUserSecret, faCartShopping, faUserCircle, faMagnifyingGlass, faChevronDown, faCheck, faFile, faUser, faArrowRight, faCalendar, faEye, faSquareFacebook, faSquareTwitter, faSquareInstagram, faLinkedin)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

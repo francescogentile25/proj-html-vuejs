@@ -19,12 +19,21 @@
                         </ul>
                     </div>
                     <div class="d-flex">
-                        <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-                        <font-awesome-icon icon="fa-solid fa-circle-user" />
+                        <a class="position-relative text-white">
+                            <font-awesome-icon icon=" fa-solid fa-cart-shopping" />
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-dark">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                        <a>
+                            <font-awesome-icon icon="fa-solid fa-circle-user" />
+                        </a>
                     </div>
                     <div class="d-flex">
                         <input class="search" type="text" placeholder="Search">
-                        <button class="search-button">
+                        <button class="search-button text-success bg-white">
                             <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
                         </button>
                     </div>
