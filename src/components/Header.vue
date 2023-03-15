@@ -10,8 +10,10 @@
                 <div class="col  d-flex align-items-center">
                     <div class="nav-link">
                         <ul class="d-flex mb-0">
-                            <li v-for="link in links" class="d-flex li-item justify-content-center align-items-center">
+                            <li v-for="link in links"
+                                class="d-flex li-item justify-content-center align-items-center position-relative">
                                 {{ link }}
+                                <span class="line"></span>
                                 <span class="chevron">
                                     <font-awesome-icon icon="fa-solid fa-chevron-down" />
                                 </span>
@@ -62,7 +64,7 @@ nav {
 }
 
 .li-item {
-    padding: 0 18px;
+    margin: 0 18px;
     font-size: 16px;
     font-weight: 500;
 
@@ -71,6 +73,32 @@ nav {
 .logo {
     padding: 28px 0;
     max-width: 160px;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    top: 50%;
+    left: 0%;
+    display: none;
+    animation: active 300ms linear;
+}
+
+@keyframes active {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.li-item:hover .line {
+    display: block;
 }
 
 .chevron {
