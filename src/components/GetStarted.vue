@@ -32,4 +32,8 @@ export default {
     margin-top: 42px;
     margin-bottom: 100px;
 }
+
+.button:hover {
+    background-color: var(--primary);
+}
 </style>

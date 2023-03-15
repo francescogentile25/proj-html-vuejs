@@ -114,6 +114,10 @@ export default {
     padding: 14px 40px;
 }
 
+.button:hover {
+    background-color: var(--primary);
+}
+
 .list {
     margin: 20px 0;
 }
@@ -121,4 +125,5 @@ export default {
 .fa-check {
     color: var(--green);
     margin-right: 16px;
-}</style>
+}
+</style>

@@ -11,11 +11,19 @@
                                 <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
                                 <p>support@maxcoach.com</p>
                             </div>
-                            <div class="icon d-flex">
-                                <font-awesome-icon icon="fa-brands fa-square-facebook" />
-                                <font-awesome-icon icon="fa-brands fa-square-twitter" />
-                                <font-awesome-icon icon="fa-brands fa-square-instagram" />
-                                <font-awesome-icon icon="fa-brands fa-linkedin" />
+                            <div class="icons d-flex">
+                                <a href="" class="icon">
+                                    <font-awesome-icon icon="fa-brands fa-square-facebook " />
+                                </a>
+                                <a href="" class="icon">
+                                    <font-awesome-icon icon="fa-brands fa-square-twitter" />
+                                </a>
+                                <a href="" class="icon">
+                                    <font-awesome-icon icon="fa-brands fa-square-instagram" />
+                                </a>
+                                <a href="" class="icon">
+                                    <font-awesome-icon icon="fa-brands fa-linkedin" />
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -64,14 +72,16 @@ export default {
     padding: 13px 0;
 }
 
-.icon {
+.icons {
     color: rgba(105, 105, 105, 0.5);
     font-size: 24px;
     gap: 32px;
 }
 
+
 .icon:hover,
-.link:hover {
+.link:hover,
+.link>a:hover {
     color: var(--green);
 }
 </style>

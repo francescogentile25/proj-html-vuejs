@@ -46,6 +46,10 @@ export default {
         padding: 14px 40px;
     }
 
+    .button:hover {
+        background-color: white;
+        color: var(--green);
+    }
 }
 
 

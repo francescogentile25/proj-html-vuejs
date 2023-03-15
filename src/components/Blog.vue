@@ -86,6 +86,10 @@ export default {
     color: var(--black);
 }
 
+.text:hover {
+    color: var(--green);
+}
+
 .icon {
     display: flex;
     gap: 10px;

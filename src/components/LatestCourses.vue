@@ -115,6 +115,7 @@ export default {
         max-width: 523px;
         align-items: center;
         gap: 26px;
+        padding: 20px;
 
         .card-img {
             max-width: 170px;
@@ -150,5 +151,17 @@ export default {
     padding: 14px 40px;
     margin-bottom: 100px;
     margin-top: 60px
+}
+
+.button:hover {
+    background-color: var(--primary);
+}
+
+.my-card:hover {
+    background-color: white;
+}
+
+.text:hover {
+    color: var(--green);
 }
 </style>

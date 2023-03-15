@@ -67,7 +67,10 @@ export default {
 }
 
 .card-img {
-    max-width: 195px;
+    aspect-ratio: 1;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
     margin: 0 100px
 }
 
